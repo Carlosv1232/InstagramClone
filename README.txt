@@ -33,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-When creating the sign up functionality, app kept crashing upon click. signup functionality has been disabled for now
+Sign up functionality wasn't working properly, app crashes when the sign up button is clicked, therefore it will not be shown within the gif. 
 
 ## Open-source libraries used
 
