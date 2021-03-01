@@ -26,11 +26,12 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        /*
+
+        //ParseUser.logOut();
         if(ParseUser.getCurrentUser() != null){
             goMainActivity();
         }
-        */
+
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btLogin = findViewById(R.id.btLogin);
