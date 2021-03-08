@@ -1,5 +1,6 @@
 package com.example.instagramclone;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,7 +14,7 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
-public class Signup extends AppCompatActivity {
+public class Signup extends Activity {
 
     public static final String TAG = "Signup";
     private EditText etUsername;
@@ -28,7 +29,7 @@ public class Signup extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         btnSignup = findViewById(R.id.btnSignup);
 
-        /*
+
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,8 +46,6 @@ public class Signup extends AppCompatActivity {
                 finish();
             }
         });
-
-         */
 
     }
 

@@ -35,8 +35,8 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btLogin = findViewById(R.id.btLogin);
-        //btnSign = findViewById(R.id.btnSignup);
-        /*
+        btnSign = findViewById(R.id.btnSignup);
+
         btnSign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-         */
+
 
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
