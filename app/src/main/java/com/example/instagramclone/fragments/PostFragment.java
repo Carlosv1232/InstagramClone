@@ -26,10 +26,10 @@ import java.util.List;
 
 public class PostFragment extends Fragment {
 
-    private static final String TAG = "PostFragment";
+    public static final String TAG = "PostFragment";
     private RecyclerView rvPosts;
-    private PostsAdapter adapter;
-    private List<Post> allPosts;
+    protected PostsAdapter adapter;
+    protected List<Post> allPosts;
     public PostFragment() {
         // Required empty public constructor
     }
@@ -58,9 +58,11 @@ public class PostFragment extends Fragment {
 
     }
 
-    private void queryPosts() {
+    protected void queryPosts() {
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
         query.include(Post.KEY_USER);   //this will get the full details of the user
+        query.setLimit(20);
+        query.addDescendingOrder(Post.KEY_CREATED_KEY);
         query.findInBackground(new FindCallback<Post>() {
             @Override
             public void done(List<Post> posts, ParseException e) {
